@@ -1,0 +1,42 @@
+.nav-items {
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  display: flex;
+
+  .navItems-item {
+    height: inherit;
+    transition: all 1s;
+
+    button {
+      background: none;
+      border: none;
+      width: inherit;
+      cursor: pointer;
+    }
+
+    &:nth-child(2) {
+      background-color: #aed6f1;
+    }
+    &:nth-child(3) {
+      background-color: #f1948a;
+    }
+    &:last-child {
+      background-color: #f4d03f;
+    }
+  }
+
+  .open {
+    width: calc(100vw - 3.5rem * 3);
+    display: block;
+
+    div {
+      padding: 1rem;
+    }
+  }
+  .close {
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+  }
+}
